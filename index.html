@@ -7,77 +7,501 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/99caa69cc4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="extra-offers">
-            <a href="">gift card</a>
-            <a href="">brands</a>
-        </div>
-        <div class="language-dropdown">
-            <button onclick="myFunction()" class="lan-dropbtn">Select language</button>
-            <div id="my-language-Dropdown" class="language-dropdown-content">
-            <a href="#"><img src="S.images/usa flag.jpg" alt="">English</a>
-            <a href="#"> <img src="S.images/georgia flag.jpg" alt="georgia-flag">ქართული</a>
-            </div>
-        </div>
-    </header>
+    
     <div class="main-navigation">
-        <div class="logo">
-            <img src="S.images/dressupge-logo-1656445204.jpg" alt="">
+        <div class="logo" >
+             <a href="index.html"><img src="S.images/dressupge-logo-1656445204.jpg" alt=""></a>
         </div>
         <div class="search">
-            <input type="text" placeholder="search our catalog">
+            <input type="text" placeholder="ძებნა">
             <i id="searchButton" class="fa fa-search"></i>
         </div>
-        <div class="icons">
-            <div class="signin-icon">
-                <i class="fa fa-user fa-fw icon" aria-hidden="true"></i>
-            </div>
-            <div class="mobile-bag-icon">
-                <i class="fa fa-shopping-bag mobile-bag-icon" aria-hidden="true"></i>
-            </div>
-        </div>
-    </div>  
-    <div class="main-catalog">
-        <div class="catalog-name">
-            <a href="">ახალი</a>
-        </div>
-        <div class="catalog-name">
-            <a href="">ონლაინ ექსკლუზივი</a>
-        </div>
-        <div class="catalog-name" id="women">
-            <a href="">ქალი</a>
-        </div>
-        <div class="catalog-name" id="men">
-            <a href="">მამაკაცი</a>
-        </div>
-        <div class="catalog-name" id="children">
-            <a href="">ბავშვი</a>
-        </div>
-        <div class="catalog-name">
-            <a href="">ფასდაკლება</a>
-        </div>
-        <div class="catalog-name">
-            <a href="">ბოლო ერთეულები</a>
+        <div class="sign-up">
+          <button onclick="document.getElementById('id01').style.display='block'">რეგისტრაცია</button>
+          <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Exit</span>
+            <form class="modal-content" action="/action_page.php">
+              <div class="container">
+                <h1>Sign Up</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+          
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+          
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+          
+                <div class="clearfix">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <button type="submit" class="signup">Sign Up</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
     </div>
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">
+                  <a href="women.html">ქალი</a>
+                  <i class="fa fa-caret-down"></i>    
+                </button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="column">
+                    <h3>ტანსაცმელი</h3>
+                    <a href="#">ჯინსი</a>
+                    <a href="#">შარვალი</a>
+                    <a href="#">შორტი</a>
+                    <a href="#">მაისური</a>
+                  </div>
+                  <div class="column">
+                    <a href="#">პერანგი / ბლუზი</a>
+                    <a href="#">ჯემპრი / ჟაკეტი</a>
+                    <a href="#">ქურთუკი</a>
+                    <a href="#">ჟილეტი</a>
+                    
+                  </div>
+                  <div class="column">
+                    <a href="#">პიჯაკი</a>
+                    <a href="#">კაბა</a>
+                    <a href="#">ქვედაბოლო</a>
+                    <a href="#">კომბინიზონი</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                  <a href="">მამაკაცი</a>
+                  <i class="fa fa-caret-down"></i> 
+                </button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="column">
+                    <h3>ტანსაცმელი</h3>
+                    <a href="#">ჯინსი</a>
+                    <a href="#">შარვალი</a>
+                    <a href="#">შორტი</a>
+                    <a href="#">მაისური</a>
+                  </div>
+                  <div class="column">
+                    <a href="#">პოლო მაისური</a>
+                    <a href="#">პერანგი</a>
+                    <a href="#">ჯემპრი / ჟაკეტი</a>
+                    <a href="#">ქურთუკი</a>
+
+                  </div>
+                  <div class="column">
+                    <a href="#">ჟილეტი</a>
+                    <a href="#">პიჯაკი</a>
+                    <a href="#">კომბინიზონი</a>
+                    <a href="#">საცურაო კოსტუმი</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"> 
+                  <a href="">ბავშვი</a>
+                  <i class="fa fa-caret-down"></i>   
+                </button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="column">
+                    <h3>ტანსაცმელი</h3>
+                    <a href="#">ჯინსი</a>
+                    <a href="#">შარვალი</a>
+                    <a href="#">შორტი</a>
+                    <a href="#">მაისური</a>
+                  </div>
+                  <div class="column">
+                    <h3>Category 2</h3>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 1</a>
+
+                  </div>
+                  <div class="column">
+                    <h3>Category 3</h3>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 1</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
     <section class="container">
-        <div class="slide-wrapper">
-            <div class="slider">
+        <div class="slide-wrapper ">
+            <div class="slider" id="slide">
                 <img src="L.images/20230606-151445.jpeg" alt="" id="slide-1">
                 <img src="L.images/50l e.png" alt="" id="slide-2">
                 <img src="L.images/dressupp.background.jpeg" alt="" id="slide-3">
-                <div class="slider-nav">
-                    <a href="#slide-1"></a>
-                    <a href="#slide-2"></a>
-                    <a href="#slide-3"></a>
-                </div>
             </div>
-            
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+        </div>
+        <div class="photo-collage">
+          <img src="m.images/axali koleqcia.png" alt="">
+          <img src="m.images/bavshvi.png" alt="">
+          <img src="m.images/fasdakleba.png" alt="">
+          <img src="m.images/onlain eqs_.png" alt="">
         </div>
     </section>
+    <section class="clothe-offers flex">
+      <h2>დღის შეთავაზება</h2>
+      <div class="offer-day grid-offers">
+        <div class="od-photo">
+          <img src="m.images/1.jpg" alt="" class="hover">
+          <img src="m.images/1hover.jpg" alt="" class="default">
+          <span>ქვედაბოლო</span>
+          <p>Y.A.S -YASCOLLY MW NAPLON SKIRT NOOS</p>
+        </div>
+        <div class="od-photo">
+          <img src="m.images/2.jpg" alt="" class="default">
+          <img src="m.images/2hover.jpg" alt="" class="hover">
+          <span>მაისური</span>
+          <p>Y.A.S - YASZEPPA SL TOP</p>
+        </div>
+        <div class="od-photo">
+          <img src="m.images/3.jpg" alt="" class="default">
+          <img src="m.images/3hover.jpg" alt="" class="hover">
+          <span>კაბა</span>
+          <p>Y.A.S - YASYVES LS DRESS W</p>
+        </div>
+        <div class="od-photo">
+          <img src="m.images/4.jpg" alt="" class="default">
+          <img src="m.images/4hover.jpg" alt="" class="hover">
+          <span>კაბა</span>
+          <p>Y.A.S - YASYVES LS DRESS W</p>
+        </div>
+        <div class="od-photo">
+          <img src="m.images/5.jpg" alt="" class="default">
+          <img src="m.images/5hover.jpg" alt="" class="hover">
+          <span>ჯემპრი / ჟაკეტი</span>
+          <p>Y.A.S - YASWOOLA LS HIGH NECK TOP NOOS</p>
+        </div>
+        <div class="od-photo">
+          <img src="m.images/6hover.jpg" alt="" class="default">
+          <img src="m.images/6.jpg" alt="" class="hover">
+          <span>ჯემპრი / ჟაკეტი</span>
+          <p>Y.A.S - YASWOOLA LS HIGH NECK TOP NOOS</p>
+        </div>
+      </div>
+      <h2>ახალი პროდუქცია</h2>
+      <div class="dew-products grid-offers">
+        <div class="np-photo ">
+          <img src="m.images/new-products/1.jpg" alt="" class="default">
+          <img src="m.images/new-products/1hover.jpg" alt="" class="hover">
+          <span>ქურთუკი</span>
+          <p>NAME IT</p>
+        </div>
+        <div class="np-photo">
+          <img src="m.images/new-products/2.jpg" alt="" class="default">
+          <img src="m.images/new-products/2hover.jpg" alt=""class="hover">
+          <span>ქვედაბოლო</span>
+          <p>CALVIN KLEIN</p>
+        </div>
+        <div class="np-photo">
+          <img src="m.images/new-products/3.jpg" alt="" class="default">
+          <img src="m.images/new-products/3hover.jpg" alt=""class="hover">
+          <span>ქვედაბოლო</span>
+          <p>CALVIN KLEIN</p>
+        </div>
+        <div class="np-photo">
+          <img src="m.images/new-products/4.jpg" alt="" class="default">
+          <img src="m.images/new-products/4hover.jpg" alt=""class="hover">
+          <span>ქვედაბოლო</span>
+          <p>CALVIN KLEIN</p>
+        </div>
+        <div class="np-photo">
+          <img src="m.images/new-products/5.jpg" alt="" class="default">
+          <img src="m.images/new-products/5hover.jpg" alt=""class="hover">
+          <span>ქვედაბოლო</span>
+          <p>CALVIN KLEIN</p>
+        </div>
+        <div class="np-photo">
+          <img src="m.images/new-products/6.jpg" alt="" class="default">
+          <img src="m.images/new-products/6hover.jpg" alt=""class="hover">
+          <span>ქვედაბოლო</span>
+          <p>CALVIN KLEIN</p>
+        </div>
+      </div>
+      <h2>ექსკლუზიური ბრენდები</h2>
+      <div class="exclusive-brand">
+        <img src="m.images/vero moda.jpg" alt="">
+        <img src="m.images/onlysons.png" alt="">
+        <img src="m.images/yas.jpg" alt="">
+        <img src="m.images/selected home.jpg" alt="">
+      </div>
+      <h2>ონლაინ ექსკლუზიური მოდელები</h2>
+      <div class="exclusive-models grid-offers">
+        <div class="em-photo ">
+          <img src="m.images/online exclusive models/1.jpg" alt="" class="default">
+          <img src="m.images/online exclusive models/1hover.jpg" alt="" class="hover">
+          <span>შუზი / ბათინკი</span>
+          <p>Badura</p>
+        </div>
+        <div class="em-photo">
+          <img src="m.images/online exclusive models/2.jpg" alt="" class="default">
+          <img src="m.images/online exclusive models/2hover.jpg" alt="" class="hover">
+          <span>ქურთუკი</span>
+          <p>Jack & Jones - JJERUSH BOMBER NOOS JNR</p>
+        </div>
+        <div class="em-photo">
+          <img src="m.images/online exclusive models/3.jpg" alt="" class="default">
+          <img src="m.images/online exclusive models/3hover.jpg" alt="" class="hover">
+          <span>ჯემპრი / ჟაკეტი</span>
+          <p>Vero Moda - VMPLAZA 2/4 O-NECK NEW PULLOVER GA BOO</p>
+        </div>
+        <div class="em-photo">
+          <img src="m.images/online exclusive models/4.jpg" alt="" class="default">
+          <img src="m.images/online exclusive models/4hover.jpg" alt="" class="hover">
+          <span>კაბა</span>
+          <p>Y.A.S - DRESS - SHOW</p>
+        </div>
+        <div class="em-photo">
+          <img src="m.images/online exclusive models/5.jpg" alt="" class="default">
+          <img src="m.images/online exclusive models/5hover.jpg" alt="" class="hover">
+          <span>შარვალი</span>
+          <p>Tally Weijl - BLACK HIGH WAIST WIDE LEG LEGGINGS</p>
+        </div>
+        <div class="em-photo">
+          <img src="m.images/online exclusive models/6.jpg" alt="" class="default">
+          <img src="m.images/online exclusive models/6hover.jpg" alt="" class="hover">
+          <span>მაისური</span>
+          <p>Noisy May - NMALENA S/S O-NECK SEMICROP TOP FWD NOOS</p>
+        </div>
+      </div>
+      <h2>ქართული ბრენდები</h2>
+      <div class="geo-brands">
+        <img src="m.images/geo brands/atrio.jpg" alt="" width="">
+        <img src="m.images/geo brands/savali.jpg" alt="">
+        <img src="m.images/geo brands/studioline.jpg" alt="">
+      </div>
+      <h2>ბავშვის პროდუქცია</h2>
+      <div class="for-children grid-offers">
+        <div class="child-photo">
+          <img src="m.images/for children/1.jpg" alt="" class="default">
+          <img src="m.images/for children/1hover.jpg" alt="" class="hover">
+          <span>ქურთუკი</span>
+          <p>NAME IT</p>
+        </div>
+        <div class="child-photo">
+          <img src="m.images/for children/2.jpg" alt="" class="default">
+          <img src="m.images/for children/2hover.jpg" alt="" class="hover">
+          <span>სპორტული / კედი</span>
+          <p>Lacoste - L001 222 1 SUI</p>
+        </div>
+        <div class="child-photo">
+          <img src="m.images/for children/3.jpg" alt="" class="default">
+          <img src="m.images/for children/3hover.jpg" alt="" class="hover">
+          <span>სპორტული / კედი</span>
+          <p>NIKE - NIKE TANJUN BTV</p>
+        </div>
+        <div class="child-photo">
+          <img src="m.images/for children/4.jpg" alt="" class="default">
+          <img src="m.images/for children/4hover.jpg" alt="" class="hover">
+          <span>მაისური</span>
+          <p>VANS</p>
+        </div>
+        <div class="child-photo">
+          <img src="m.images/for children/5.jpg" alt="" class="default">
+          <img src="m.images/for children/5hover.jpg" alt="" class="hover">
+          <span>წინდა</span>
+          <p>VANS</p>
+        </div>
+        <div class="child-photo">
+          <img src="m.images/for children/6.jpg" alt="" class="default">
+          <img src="m.images/for children/6hover.jpg" alt="" class="hover">
+          <span>მაისური</span>
+          <p>VANS</p>
+        </div>
+      </div>
+      <div class="exclusive-models grid-offers">
+        <div class="em-photo">
+          <img src="m.images/last models/1.jpg" alt="">
+          <span>წინდა</span>
+          <p>REEBOK</p>
+        </div>
+        <div class="em-photo">
+          <img src="m.images/last models/2.jpg" alt="" class="default">
+          <img src="m.images/last models/2hover.jpg" alt="" class="hover">
+          <span>შუზი / ბათინკი</span>
+          <p>BIRKENSTOCK - Derry EVA Kids Scuba Yellow</p>
+        </div>
+        <div class="em-photo">
+          <img src="m.images/last models/3.jpg" alt="" class="default">
+          <img src="m.images/last models/3hover.jpg" alt="" class="hover">
+          <span>შარვალი</span>
+          <p>TOMMY HILFIGER</p>
+        </div>
+        <div class="em-photo">
+          <img src="m.images/last models/4.jpg" alt="" class="default">
+          <img src="m.images/last models/4hover.jpg" alt="" class="hover">
+          <span>ქუსლზე</span>
+          <p>FABIO RUSCONI</p>
+        </div>
+        <div class="em-photo">
+          <img src="m.images/last models/5.jpg" alt="" class="default">
+          <img src="m.images/last models/5hover.jpg" alt="" class="hover">
+          <span>ჯემპრი / ჟაკეტი</span>
+          <p>GUESS</p>
+        </div>
+        <div class="em-photo">
+          <img src="m.images/last models/6.jpg" alt="" >  
+          <span>თეთრეული</span> 
+          <p>Tommy Hilfiger - 3P BOXER BRIEF WB</p>     
+        </div>
+      </div>
+      <div class="grid-offers geo-brands">
+        <div class="advertisement geo">
+          <img src="m.images/extra information/263-thumb.jpg" alt="">
+          <h4>მოემზადე საზაფხულო ფესტივალებისთვის</h4>
+        </div>
+        <div class="advertisement">
+          <img src="m.images/extra information/266-thumb.jpg" alt="">
+          <h4>Dressup ჯგუფის მაღაზიები ბათუმში</h4>
+        </div>
+        <div class="advertisement">
+          <img src="m.images/extra information/268-thumb.png" alt="">
+          <h4>მოემზადე ბანკეტისთვის</h4>
+        </div>
+        <div class="advertisement">
+          <img src="m.images/extra information/269-thumb (1).jpg" alt="">
+          <h4>Dressup ჯგუფს Tommy Hilfiger შემოუერთდა</h4>
+        </div>
+      </div>
+      <div class="brands">
+        <img src="m.images/brands/1.jpg" alt="">
+        <img src="m.images/brands/2.jpg" alt="">
+        <img src="m.images/brands/3.jpg" alt="">
+        <img src="m.images/brands/4.jpg" alt="">
+        <img src="m.images/brands/5.jpg" alt="">
+        <img src="m.images/brands/6.jpg" alt="">
+        <img src="m.images/brands/7.jpg" alt="">
+        <img src="m.images/brands/8.jpg" alt="">
+        <img src="m.images/brands/9.jpg" alt="">
+        <img src="m.images/brands/10.jpg" alt="">
+        <img src="m.images/brands/11.jpg" alt="">
+        <img src="m.images/brands/12.jpg" alt="">
+        <img src="m.images/brands/13.jpg" alt="">
+        <img src="m.images/brands/14.jpg" alt="">
+        <img src="m.images/brands/15.jpg" alt="">
+        <img src="m.images/brands/16.jpg" alt="">
+        <img src="m.images/brands/17.jpg" alt="">
+        <img src="m.images/brands/18.jpg" alt="">
+        <img src="m.images/brands/19.jpg" alt="">
+        <img src="m.images/brands/20.jpg" alt="">
+        <img src="m.images/brands/21.jpg" alt="">
+        <img src="m.images/brands/22.jpg" alt="">
+        <img src="m.images/brands/23.jpg" alt="">
+        <img src="m.images/brands/24.jpg" alt="">
+        <img src="m.images/brands/25.jpg" alt="">
+        <img src="m.images/brands/26.jpg" alt="">
+        <img src="m.images/brands/27.jpg" alt="">
+        <img src="m.images/brands/28.jpg" alt="">
+        <img src="m.images/brands/29.jpg" alt="">
+        <img src="m.images/brands/30.jpg" alt="">
+        <img src="m.images/brands/31.jpg" alt="">
+        <img src="m.images/brands/32.jpg" alt="">
+        <img src="m.images/brands/33.jpg" alt="">
+        <img src="m.images/brands/34.jpg" alt="">
+        <img src="m.images/brands/35.jpg" alt="">
+        <img src="m.images/brands/36.jpg" alt="">
+
+      </div>
+    </section>
+    <footer>
+      <div class="input-wrapper">
+        <div class="input-container">
+          <h3>დარეგისტრირდით სიახლეებისათვის</h3>
+          <div class="input-email">
+            <input type="email" id="email-registration" placeholder="Enter Your Email">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          </div>
+          <label for="email-registration">თქვენ ნებისმიერ დროს შეგიძლიათ გააუქმოთ სიახლეების მიღება.</label>
+        </div>
+        <div class="footer-icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+      <div class="detail-information">
+        <div class="information">
+          <nav>
+            <ul>
+              <h4>ინფორმაცია</h4>
+              <li>ტრანსპორტირება</li>
+              <li>ანგარიშსწორება</li>
+              <li>დაბრუნება და გადაცვლა</li>
+              <li>მოხმარების წესები და პირობები</li>
+              <li>დაგვიკავშირდით</li>
+              <li>საიტის რუკა</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="information">
+          <nav>
+            <ul>
+              <h4>საინტერესო ლინკები</h4>
+              <li>შესყიდვის ინსტრუქციები</li>
+              <li>სასაჩუქრე ბარათი</li>
+              <li>ახალი პროდუქცია</li>
+              <li>ფასდაკლებული პროდუქცია</li>
+              <li>ქართული ბრენდები</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="information">
+          <nav>
+            <ul>
+              <h4>დრესაპ ჯგუფი</h4>
+              <li>დრესაპ ჯგუფის შესახებ</li>
+              <li>დრესაპ ჯგუფის ისტორია</li>
+              <li>ბრენდები</li>
+              <li>დრესაპ ბარათი</li>
+              <li>სასაჩუქრე ბარათი</li>
+              <li>ჩვენი მაღაზიები</li>
+              <li>მიმდინარე შეთავაზებები დრესაპის მაღაზიებში</li>
+              <li>ბლოგი</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="information">
+          <h3>საკონტაქტო დეტალები</h3>
+          <h4>ონლაინ მაღაზიის სერვის ცენტრის სამუშაო გრაფიკი:<br>10:00 - 22:00 საათი, ორშაბათი - კვირა</h4>
+          <p><i class="fa fa-map-marker" aria-hidden="true"></i>ლვოვის ქუჩა #14, 0160, თბილისი, საქართველო</p>
+          <p><i class="fa fa-phone" aria-hidden="true"></i> (+995) 032 2 38 48 68</p>
+          <p><i class="fa fa-envelope-o" aria-hidden="true"></i>info@dressup.ge | corporate@dressup.ge</p>
+        </div>
+      </div>
+    </footer>
       <script src="ap.js">
+
       </script>    
 </body>
 </html>
