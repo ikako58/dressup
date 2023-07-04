@@ -24,6 +24,9 @@ body{
   align-items: center;
   padding: 10px;
 }
+.search>input:focus{
+  
+}
 .icons{
   font-size: 35px;
   display: flex;
@@ -199,10 +202,10 @@ li > a:hover {
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #f1f1f1;
+  background: #fff;
 }
 input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
+  background-color: white;
   outline: none;
 }
 button {
@@ -218,6 +221,7 @@ button {
 h2{
   margin-top: 2%;
   text-decoration: underline;
+  color: rgb(52, 107, 201);
 }
 button:hover {
   opacity:1;
@@ -287,10 +291,6 @@ hr {
   font-size: 15px;
   background-color: white;
 }
-.clothe-offers{
-  height: 530vh;
-  margin-bottom: 0;
-}
 .grid-offers{
   display: grid;
   grid-template-columns: repeat(6,1fr);
@@ -298,23 +298,17 @@ hr {
   gap: 8px;
   margin-left: 1%;
 }
-.od-photo > img , .np-photo>img , .em-photo>img{
+.offers-photo >img{
   width: 250px;
   height: 320px;
 }
 .hover{
   display: none;
 }
-.od-photo:hover .default{
+.offers-photo:hover .default{
   display: none;
 }
-.od-photo:hover  .hover{
-  display: block;
-}
-.np-photo:hover .default{
-  display: none;
-}
-.np-photo:hover .hover{
+.offers-photo:hover  .hover{
   display: block;
 }
 span{
@@ -331,12 +325,6 @@ span{
   width: 23%;
   border-radius: 12px;
 }
-.em-photo:hover .default{
-  display: none;
-}
-.em-photo:hover .hover{
-  display: block;
-}
 .geo-brands{
   display: flex;
   justify-content: center;
@@ -348,16 +336,6 @@ span{
   width: 31%;
   border-radius: 12px;
 }
-.child-photo > img{
-  width: 250px;
-  height: 320px;
-}
-.child-photo:hover .default{
-  display: none;
-}
-.child-photo:hover .hover{
-  display: block;
-}
 .advertisement{
   width: 102%;
 }
@@ -368,15 +346,16 @@ span{
 .brands{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin-top: 6%;
+  margin-top: 8%;
   
 }
 .brands>img{
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 footer{
-  height: 65vh;
+  height: 75vh;
+  margin-top: 4%;
 }
 .input-wrapper{
   background-color: #89a4c7;
@@ -450,4 +429,6 @@ li{
 }
 .women-section{
   height: 300vh;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
 }
