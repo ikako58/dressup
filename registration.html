@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo.PNG">
+    <script src="https://kit.fontawesome.com/99caa69cc4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="upper-header">
+            <a href="index.html"><img src="https://dressup.ge/img/dressupge-logo-1656445204.jpg" alt="dressup-logo" class="logo"></a>
+            <div class="search">
+                <input type="text">
+                <i id="searchButton" class="fa fa-search"></i>
+            </div>
+            <div class="log-in">
+                <a href="login.html" id="log-in"><i class="fa fa-user fa-fw icon" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+    </header>
+    <h2>რეგისტრაცია</h2>
+    <form action="/action_page.php" method="post" id="demo">
+      <div class="container">
+        <label for="uname"><b>სახელი</b></label>
+        <input type="text" placeholder="Enter your FirstName" name="FirstName" required>
+
+        <label for="uname"><b>გვარი</b></label>
+        <input type="text" placeholder="Enter your LastName" name="LastName" required>
+
+        <label for="uname"><b>ელ-ფოსტა</b></label>
+        <input type="email" placeholder="Enter email" name="email" required>
+
+        <label for="uname"><b>ტელეფონის ნომერი</b></label>
+        <input type="number" placeholder="Enter phone number" name="phone number" required>
+
+        <label for="uname"><b>მისამართი</b></label>
+        <input type="text" placeholder="Enter address" name="address" required>
+    
+        <label for="psw"><b>პაროლი</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label for="psw"><b>გაიმეორეთ პაროლი</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+            
+        <button type="submit">register</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+    </form>
+    <script>
+      function myFunction() {
+  
+  let x = document.getElementById("numb").value;
+  
+  let text;
+  if (isNaN(x) || x < 1 || x > 10) {
+    text = "Input not valid";
+  } else {
+    text = "Input OK";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+    </script>
+</body>
+</html>
